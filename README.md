@@ -1,1 +1,1 @@
-# cat_js
+# Comptutational Algorithm Thinking with Javascript
