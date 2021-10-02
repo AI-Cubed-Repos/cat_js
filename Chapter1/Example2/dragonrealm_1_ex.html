@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>AI Cubed CAT Intermediary Example 2- Dragon Realm v1</title>
+  </head>
+  <body>
+    <h1>Dragon Realm v1</h1>
+    <h2>Exercises</h2>
+    <p>
+        <ul>
+            <li>Top Down Design - Read following requirements and classify them into several areas</li>
+            <li>Flow Chart - Read following requirements and draw flowcharts before start programming</li>
+            <li>Improve the program to enforce user can only input 1 or 2, otherwise we gona to give error</li>
+            <li>Add health point display in the game, default 50</li>
+            <li>Add gold coin display in the game, show how many gold player get</li>
+            <li>Both health point and coins are accumulative</li>
+            <li>Bad dragon will cost hp between 1-5 radomonly</li>
+            <li>Good dragon will give gold coins 1-5 radmonly</li>
+            <li>Everytime, the good cave # will different</li>
+            <li>Player dies when HP <= 0</li>
+            <li>Player wins when there is 50 gold</li>
+            <li>Player can continue play util it dies or win</li>
+            <li>(Optional)try to add images to show HP or/and Coins</li>
+            <li>(Optional)try to add animated gif when player get coins</li>
+            <li>(Optional)try to add animated gif when player get hit by bad dragon</li>
+            <li>(Optional)A shop function that user can gold coins to by health point 2 gold coins = 1 hp</li>
+            <li>(Optional)user can specify how many HPs he/she buys</li>
+        </ul>
+    </p>
+    <p>
+        <script type="text/JavaScript">
+
+            function play(){
+                //this generate the cave numbe which produce gold
+                secret = Math.floor(Math.random() * 2) + 1;
+                guess = document.getElementById("guessinput").value;
+
+                if(guess!=1 && guess!=2){
+                    document.getElementById("msg_gold").style.display = "none";
+                    document.getElementById("msg_die").style.display = "none";                    
+                    document.getElementById("msg_error").style.display = "block";     
+                } else if (guess == secret){
+                    document.getElementById("msg_gold").style.display = "block";
+                    document.getElementById("msg_die").style.display = "none";
+                    document.getElementById("msg_error").style.display = "none";     
+
+                } else {
+                    document.getElementById("msg_gold").style.display = "none";
+                    document.getElementById("msg_die").style.display = "block";
+                    document.getElementById("msg_error").style.display = "none";     
+
+                }
+                    
+            }
+        </script>
+        <div class="alert alert-danger" role="alert" id="msg_error" style="display:none">
+            Error: you must input 1 or 2 as cave number
+        </div>
+        <div class="alert alert-danger" role="alert" id="msg_die" style="display:none">
+            You died!
+        </div>
+        <div class="alert alert-success" role="alert" id="msg_gold" style="display:none">
+            You have 1000 gold!
+        </div>
+        <form id="guess_form">
+            <div class="form-group">
+                <label for="guessinput">Which dragon cave you will choose 1or 2?</label>
+                <input type="number" class="form-control" id="guessinput" placeholder="dragon cave #">
+                <small id="guesshelp" class="form-text text-muted">Please input a number either 1 or 2</small>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="play()">Submit</button>
+        </form>
+
+    </p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

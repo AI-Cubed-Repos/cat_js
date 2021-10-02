@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>AI Cubed CAT Intermediary Example 3- Hangman v1</title>
+  </head>
+  <body>
+    <h1>Hangman v1</h1>
+    <p>
+        <h2>Excercise</h3>
+        <p>Search the todo to find right place to put your changes</p>
+        <OL>
+            <li>Draw a Flowchart</li>
+            <li>Write skeleton program to support the following features</li>
+            <li>A random word will be chosen from at least 10 words</li>
+            <li>maximum trials allowed is 6</li>
+            <li>if guess is same as one of previous guess, it wont be counted as times</li>
+            <li>if player guessed the word before maximum trials reached, player will won (game will show won screen)</li>
+            <li>After win/lose, the guess form will be hidden and player can choose to replay</li>
+            <li>when replay, a new word will be generated</li>
+            <li>(Optional) Update flowchart as following requirements</li>
+            <li>(Optional) Add more skeleton code</li>
+            <li>(optional) Add start play screen before user play. It has a play button</li>
+            <li>(optional) Player will choose a category word before starting, each category has at least ten words; There are 5 categories</li>
+        </OL>
+    </p>
+    <p>
+        <h2>Hangman Game</h2>
+        <script type="text/JavaScript">
+
+            //Todo: add your javascript functions
+        </script>
+
+        <div class="card" style="width: 38rem;margin-bottom: 20px;">
+            <!-- The hangman drawing area -->
+            <!-- Todo: use javascript code to modify image dynamically -->
+            <img id="hangman_img" src="hangman_start.jpeg" class="card-img-top" alt="hangman image">
+            <!-- hangman text area -->
+            <!-- Todo: use the javascript to control display-->
+            <div class="card-body">
+                <h3 class="card-title" style="display: none;margin-top:20px;">_ _ _ _ _ _ _ _</h5>
+            </div>
+        </div>
+        <!-- The message areas-->
+        <!-- Todo: Add your different message here-->
+        <div class="alert alert-danger" role="alert" id="msg_sample" style="display:none">
+            Sample Code!
+        </div>
+        <!-- The guess area-->
+        <form id="guess_form">
+            <div class="form-group">
+                <label for="guessinput">Letter you gona to guess?</label>
+                <input type="text" class="form-control" id="guessinput" placeholder="letter to guess">
+                <small id="guesshelp" class="form-text text-muted">Please input a letter you guess</small>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="play()">Submit</button>
+        </form>
+
+    </p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body
