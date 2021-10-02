@@ -1,1 +1,1 @@
-# Comptutational Algorithm Thinking with Javascript
+# Computational Algorithm Thinking with Javascript
