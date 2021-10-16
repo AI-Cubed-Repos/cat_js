@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>AI Cubed CAT Intermediary Example 3 - Hangman v1 - Random Word</title>
+  </head>
+  <body>
+    <p>
+        <h2>Random Word</h2>
+        <script type="text/JavaScript">
+
+            //generate random word using index
+            //version1
+            function randomWordV1(wordsArray){
+                let numOfWords = wordsArray.length;
+                index = Math.floor(Math.random() * numOfWords);
+                return wordsArray[index];
+
+            }
+
+            //version 2
+            function randInt(min, max){
+                return Math.floor(Math.random() * (max-min))+min;
+            }
+            //this is only for advanced student, regex
+            function randomWordV2(inputLetter){
+                let numOfWords = wordsArray.length;
+                return wordsArray[randInt(0, numOfWords)];
+            }
+
+            //consoel try out
+            // wordsArray = ["apple", "orange", "pear"]
+            // randomWordV1(wordsArray)
+            // randomWordV1(wordsArray)
+            // randomWordV2(wordsArray)
+            // randomWordV2(wordsArray)
+
+        </script>
+    </p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
