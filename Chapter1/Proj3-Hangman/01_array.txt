@@ -1,3 +1,6 @@
+#follow the url below to learn array
+https://www.w3schools.com/js/js_arrays.asp
+
 #type following into your javascript console
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.length; // return 4
