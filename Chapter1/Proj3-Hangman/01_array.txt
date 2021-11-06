@@ -1,88 +1,9 @@
 #follow the url below to learn array
 https://www.w3schools.com/js/js_arrays.asp
-
-#type following into your javascript console
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.length; // return 4
-fruits[fruits.length - 1];  // Returns "Mango"
-fruits[0] //return "Banana"
-
-fLen = fruits.length;
-
-//loop through fruits
-for (let i=0; i < fLen; i++) {
-    console.log(fruits[i]);
-}
-
-//sort and loop
-fruits.sort();
-for (let i=0; i < fLen; i++) {
-    console.log(fruits[i]);
-}
-
-//loop with function 
-function demoFunc(value){
-    console.log('My demo '+ value);
-}
-
-fruits.forEach(demoFunc);
-
-//add element - #1
-fruits.push("Lemon");
-//add element - #2
-fruits[fruits.length] = "Tomato";
-fruits[8] = "Madarine";
-console.log(fruits)
-
-let last = fruits.pop();
-console.log(last);
-console.log(fruits);
-
-let first = fruits.shift();
-console.log(first);
-console.log(fruits);
-
-let newArray = fruits.unshift("Strawberry");
-console.log(newArray);
-console.log(fruits);
-
-//find index
-let pos = fruits.indexOf("Orange");
-console.log(pos);
-let pos2 = fruits.indexOf("Unknown");
-console.log(pos2)
-
-//remove an item by index
-let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
-console.log(vegetables)
-// ["Cabbage", "Turnip", "Radish", "Carrot"]
-
-let pos = 1
-let n = 2
-
-let removedItems = vegetables.splice(pos, n)
-// this is how to remove items, n defines the number of items to be removed,
-// starting at the index position specified by pos and progressing toward the end of array.
-
-console.log(vegetables)
-// ["Cabbage", "Carrot"] (the original array is changed)
-
-console.log(removedItems)
-// ["Turnip", "Radish"]
-
-let shallowCopy = fruits.slice() // this is how to make a copy
-// ["Strawberry", "Mango"]
-
-
-#associate array
-
-const person = [];
-person["firstName"] = "John";
-person["lastName"] = "Doe";
-person["age"] = 46;
-person.length;     // Will return 0
-person[0];         // Will return undefined
-console.log(person);
+https://www.w3schools.com/js/js_array_methods.asp
+https://www.w3schools.com/js/js_array_sort.asp
+https://www.w3schools.com/js/js_array_iteration.asp
+https://www.w3schools.com/js/js_array_const.asp
 
 //document 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
