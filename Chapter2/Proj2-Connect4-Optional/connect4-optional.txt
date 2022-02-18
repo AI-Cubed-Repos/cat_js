@@ -1,0 +1,3 @@
+Please create connect 4 game with AI comuter player.
+
+This is an optioal project for students who can finish TIC TAC TOE in first term. 

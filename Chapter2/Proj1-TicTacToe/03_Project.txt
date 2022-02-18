@@ -1,0 +1,10 @@
+Please create an oline TIC TAC TOE game with AI Player 
+
+AI PLayer strategy can be varied in many games. But the most popluar one is:
+1. Play win if possible
+2. Play defence if human player gona to win
+3. Play center if it is not taken
+4. Play corner if it is not taken
+5. Play side if it is not taken
+
+For you game, please have top down design or flowchart first
