@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Lesson 1.7 Triangle
+</title>
+</head>
+<body>
+	<h1>Lesson 1.7 - Draw A Triangle</h1>
+	<p>Please view source code and understand how it works</p>
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+function draw() {
+  const canvas = document.getElementById('myCanvas');
+  if (canvas.getContext) {
+    const ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.moveTo(75, 50);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(200, 0);
+    ctx.fill();
+  }
+}
+
+draw()
+
+</script>
+
+</body>
+</html>

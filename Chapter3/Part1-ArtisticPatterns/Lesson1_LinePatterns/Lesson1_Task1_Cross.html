@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Lesson 1 Sample Answers
+</title>
+</head>
+<body>
+	<h1>Lesson 1.1 - Draw A Cross</h1>
+	<p>Please view source code and understand how it works</p>
+	<p>A shape is rectange with its corner at (0, 190), a width of 400, a height of 20. it is center is at (200, 200); Please note that rotation uses radian</p>
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+// Non-rotated rectangle
+ctx.fillStyle = 'red';
+for(i = 0; i < 2; i++) {
+
+
+	// Matrix transformation
+	ctx.translate(200, 200);
+	ctx.rotate(Math.PI / 2 * i);
+	ctx.translate(-200, -200);	
+
+    //rotated rectangle
+	ctx.fillRect(0, 190, 400, 20);
+}
+
+</script>
+
+</body>
+</html>

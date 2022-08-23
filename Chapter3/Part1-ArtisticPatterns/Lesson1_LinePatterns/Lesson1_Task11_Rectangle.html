@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Lesson 1.11 Rectangle
+</title>
+</head>
+<body>
+	<h1>Lesson 1.7 - Draw A Rectangle</h1>
+	<p>Please view source code and understand how it works. It is different from using lines</p>
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+
+function draw() {
+  const canvas = document.getElementById('myCanvas');
+  if (canvas.getContext) {
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillRect(25, 25, 100, 100);
+    ctx.clearRect(45, 45, 60, 60);
+    ctx.strokeRect(50, 50, 50, 50);
+  }
+}
+
+draw()
+
+</script>
+
+</body>
+</html>
