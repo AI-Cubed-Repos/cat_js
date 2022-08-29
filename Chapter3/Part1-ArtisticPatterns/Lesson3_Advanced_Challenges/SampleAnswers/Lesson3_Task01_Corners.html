@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Lesson 2 Rotation/Transform - Rotate around center of screen
+</title>
+</head>
+<body>
+	<h1>Lesson 2.3 - Rotation Sample</h1>
+	<p>Please view source code and understand how it works</p>
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+//to make it rotate around top left corner
+for (side=0; side<4; side++){
+	for (i=0; i<7; i++){
+		mycolor = "yellow";
+		if (i % 2 == 1) mycolor = "green";
+		ctx.fillStyle = mycolor;
+		ctx.fillRect(0, 0, 50, 50);
+		if (side == 0)
+			ctx.translate(50, 0);	
+		else if (side == 1)
+			ctx.translate(0, 50);
+		else if (side == 2)
+			ctx.translate(-50, 0)
+		else
+			ctx.translate(0, -50)
+
+	}
+
+}
+
+</script>
+
+</body>
+</html>
