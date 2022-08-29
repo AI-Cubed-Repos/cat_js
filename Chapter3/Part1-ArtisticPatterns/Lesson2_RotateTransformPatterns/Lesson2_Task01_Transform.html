@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Lesson 2 Rotation/Transform - Task 01 Sample
+</title>
+</head>
+<body>
+	<h1>Lesson 2.1 - Rotation Sample</h1>
+	<p>Please view source code and understand how it works</p>
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+//to make it rotate around top left corner
+ctx.translate(200, 200);
+ctx.fillStyle = "yellow";
+ctx.fillRect(0, 0, 200, 100);
+
+ctx.rotate(Math.PI/4);
+ctx.fillStyle = "red";
+ctx.fillRect(0, 0, 200, 100);
+
+ctx.rotate(Math.PI/4);
+ctx.fillStyle = "blue";
+ctx.fillRect(0, 0, 200, 100);
+
+
+</script>
+
+</body>
+</html>

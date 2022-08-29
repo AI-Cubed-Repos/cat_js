@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Lesson 2 Rotation/Transform - Rotate around top left corner
+</title>
+</head>
+<body>
+	<h1>Lesson 2.2 - Rotation Sample</h1>
+	<p>Please view source code and understand how it works</p>
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+//to make it rotate around top left corner
+ctx.fillStyle = "yellow";
+ctx.fillRect(50, 0, 50, 50);
+
+ctx.rotate(Math.PI/6);
+ctx.fillStyle = "red";
+ctx.fillRect(50, 0, 50, 50);
+
+ctx.rotate(Math.PI/6);
+ctx.fillStyle = "blue";
+ctx.fillRect(50, 0, 50, 50);
+
+ctx.rotate(Math.PI/6);
+ctx.fillStyle = "orange";
+ctx.fillRect(50, 0, 50, 50);
+</script>
+
+</body>
+</html>
