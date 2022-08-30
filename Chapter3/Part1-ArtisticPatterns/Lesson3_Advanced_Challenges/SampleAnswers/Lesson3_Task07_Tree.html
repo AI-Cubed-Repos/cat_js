@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Lesson 2 Rotation/Transform - Rotate around center of screen
+</title>
+</head>
+<body>
+	<h1>Lesson 2.3 - Rotation Sample</h1>
+	<p>Please view source code and understand how it works</p>
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+function leaf(ctx, rotate){
+	ctx.fillStyle = "green";
+	ctx.beginPath();
+	ctx.ellipse(50, 0, 50, 20, Math.PI * rotate/180, 0, Math.PI * 2);
+	ctx.stroke();
+}
+
+function leafs(ctx){
+    ctx.translate(0, 50);
+    radius = 50;
+	for (i = 0; i<4; i++){
+        
+        leaf(ctx, -60);
+		ctx.scale(0.8, 0.8);
+		ctx.translate(70, radius*0.2);
+		radius = radius * 0.8
+
+	}
+
+    ctx.translate(0, 56);
+	leaf(ctx, 0);
+
+    ctx.translate(-60, 40);
+    radius = radius/0.8;
+	for (i = 0; i<4; i++){
+        
+        leaf(ctx, 60);
+		ctx.scale(1/0.8, 1/0.8);
+		ctx.translate(-70, radius*0.2+4.8);
+		radius = radius / 0.8
+
+	}
+
+    //ctx.translate(-420, 200);
+	//ctx.scale(1.95, 1.95);
+	//for (i = 0; i<4; i++){
+
+	//	leaf(ctx, 60);
+	//	ctx.translate(70, 0);
+	//	ctx.scale(0.8, 0.8);
+	//}
+
+	//ctx.translate(0, 200);
+
+
+}
+
+leafs(ctx)
+
+</script>
+
+</body>
+</html>
