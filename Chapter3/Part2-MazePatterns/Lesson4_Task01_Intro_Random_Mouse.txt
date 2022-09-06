@@ -1,0 +1,3 @@
+It is simply proceed following the current passage until a junction is reached, and then make a raondom decision about next direction to follow. Although such a method would always eventually find the right solution, this algorithm can be extremely slow. 
+
+Please use option1, option4, option 5, option 6, option 7 in  your as part of your algorithm and write down what will be the algorithm for the task 02, task 03, task 04, and task05. We will need to test them. And write down how many steps it takes for each puzzle. 
