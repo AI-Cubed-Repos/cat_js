@@ -1,1 +1,14 @@
 This part is about  TreasureHunting
+
+
+*** Task description ***
+
+You need to creat algorithm from the 2022_maze_logic_options.pdf; And test that manually with your pen and paper. 
+
+Purple border and walls. All lines with purple color can be be moved across that. 
+
+Green circle is the one treasure that you need to find and collect. You will collect that as soon as you pass that
+
+The red triangle is the player 
+
+Please note that in the tasks, one grid is one step. 

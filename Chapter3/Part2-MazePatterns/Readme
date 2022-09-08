@@ -1,1 +1,5 @@
 This part is about maze pattern
+
+Mostly we will talk about simple / perfect mazes. Mazes containing no loop are known as "simply connected", or "perfect" mazes. They are equivalent to a tree in graph theory. 
+
+ 
